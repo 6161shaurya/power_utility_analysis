@@ -1,0 +1,49 @@
+# .gitignore
+
+# Python specific files and directories
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/
+*.egg-info/
+.env
+
+# IDE and Editor specific files
+.vscode/        # VS Code settings
+.idea/          # PyCharm settings
+*.swp           # Vim swap files
+*.bak           # Backup files
+
+# Anaconda and Jupyter specific files
+.conda/
+.ipynb_checkpoints/ # Jupyter checkpoints
+conda-meta/
+envs/
+pkgs/
+
+# Data and Output files (CRITICAL for this project)
+# These files are generated locally and should NOT be committed to Git.
+# Your deployed app will regenerate the synthetic data.
+data/           # Excludes the entire 'data' directory (raw_outages.csv, raw_weather.csv, raw_consumption.csv)
+output/         # Excludes the entire 'output' directory (e.g., rampur_outage_map.html)
+*.html          # Catches any other generated HTML files (like the map)
+*.csv           # Catches any other CSVs if generated elsewhere in the root
+
+# Saved machine learning models (if you save them locally)
+*.pkl
+*.joblib
+*.h5
+*.onnx
+*.tf
+model.json      # Keras/TensorFlow model structure
+
+# Log files
+*.log
+logs/
+
+# Miscellaneous
+.DS_Store       # macOS specific
+Thumbs.db       # Windows specific

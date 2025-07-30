@@ -1,0 +1,13 @@
+# requirements.txt
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+folium
+prophet # For time series forecasting (Facebook Prophet)
+xgboost # For gradient boosting (powerful ML model)
+scipy # For statistical functions
+streamlit # For building the interactive dashboard
+streamlit-folium # For displaying folium maps in Streamlit
+imblearn # For SMOTE (imbalanced-learn library)
