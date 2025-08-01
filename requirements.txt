@@ -5,9 +5,10 @@ scikit-learn
 matplotlib
 seaborn
 folium
-prophet # For time series forecasting (Facebook Prophet)
-xgboost # For gradient boosting (powerful ML model)
-scipy # For statistical functions
-streamlit # For building the interactive dashboard
-streamlit-folium # For displaying folium maps in Streamlit
-imblearn # For SMOTE (imbalanced-learn library)
+prophet # Facebook Prophet library for time series forecasting
+xgboost # XGBoost library for gradient boosting
+scipy
+streamlit # For building the interactive web dashboard
+streamlit-folium # For embedding Folium maps in Streamlit apps
+imblearn # imbalanced-learn library, used for SMOTE in theft detection
+plotly # For interactive plots, especially used by plotly.express
